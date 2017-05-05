@@ -1,0 +1,52 @@
+/*
+
+gray box is a border around the body of text
+
+border color = #bdc3c7
+
+date color = #3498db
+
+h2 color = #2c3e50
+
+font: source sans pro;
+
+Don't forget to search for HR CSS Styles
+
+*/
+
+body {
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+	font-family: Source Sans Pro;
+	margin: 20px auto;
+
+}
+
+h2 {
+	color: #2c3e50;
+	font-weight: bold;
+	font-size: 2.0rem;
+}
+
+.date {
+	color: #3498db;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+.quote {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px black;
+    margin-bottom: 20px;
+}
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
